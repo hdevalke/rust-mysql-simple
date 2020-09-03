@@ -598,7 +598,7 @@ impl Conn {
         auth_switched: bool,
     ) -> Result<()> {
         match auth_plugin {
-            AuthPlugin::MysqlNativePassword => {
+            AuthPlugin::MysqlNativePassword | AuthPlugin::MysqlClearPassword => {
                 self.continue_mysql_native_password_auth(auth_switched)
             }
             AuthPlugin::CachingSha2Password => {

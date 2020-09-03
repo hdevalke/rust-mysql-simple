@@ -27,6 +27,7 @@
 //! *   support of auth plugins:
 //!     *   **mysql_native_password** - for MySql prior to v8;
 //!     *   **caching_sha2_password** - for MySql v8 and higher.
+//!     *   **mysql_clear_password** - to use with any server-side plugin that needs a cleartext password.
 //!
 //! ## Installation
 //!
